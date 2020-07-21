@@ -11,6 +11,6 @@ class FeedSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(\App\feed::class, 20)->create();
     }
 }

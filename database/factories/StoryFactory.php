@@ -7,6 +7,6 @@ use Faker\Generator as Faker;
 
 $factory->define(story::class, function (Faker $faker) {
     return [
-        //
+        'article_id' => \App\article::inRandomOrder()->select('id')->limit('1')->get()->first()->id,
     ];
 });

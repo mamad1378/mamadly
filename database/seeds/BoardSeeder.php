@@ -11,6 +11,6 @@ class BoardSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\board::class, 6)->create();
     }
 }

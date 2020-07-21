@@ -12,9 +12,11 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    static public function index()
     {
-        //
+        $user_id = '1';
+        $categories = category::where('user_id' , $user_id)->get();
+        return $categories;
     }
 
     /**
@@ -44,9 +46,12 @@ class CategoryController extends Controller
      * @param  \App\category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(category $category)
+    public function show( $category )
     {
-        //
+        $category = category::where('id' , $category)->get()->first();
+        $content = $category->title;
+        // dd($content);
+        // return redirect('main')->with('content');
     }
 
     /**

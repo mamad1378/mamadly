@@ -12,9 +12,11 @@ class BoardController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    static public function index()
     {
-        //
+        $user_id = '1';
+        $boards = board::where('user_id' , $user_id)->get();
+        return $boards;
     }
 
     /**

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\BoardController;
 use App\category;
 use App\user;
 use Illuminate\Http\Request;
@@ -9,11 +11,11 @@ use Illuminate\Http\Request;
 class mainController extends Controller
 {
     public function index(){
-        $user_id = '100';
-        $categories = category::where('user_id' , $user_id)->get();
+        $categories = CategoryController::index();
+        $boards = BoardController::index();
         // $test = $categories;
         // dd($test);
-        return view('/main/index' , compact('categories'));
+        return view('/main/index' , compact(['categories','boards']));
     }
     public function about(){
         return view('/main/about');
