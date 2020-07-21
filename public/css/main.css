@@ -1,0 +1,174 @@
+
+        *{
+            text-decoration: none !important;
+        }
+        body {
+            font-family: "Lato", sans-serif;
+            overflow: hidden;
+          }
+          
+          .sidenav {
+            height: 100%;
+            width: 50px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            overflow-x: hidden;
+          }
+          
+          .sidenav a {
+            box-sizing: border-box;
+            height: 100px !important;
+            padding: 10px 8px 10px 10px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            /* display: block; */
+          }
+
+          .center-icons{
+              line-height: 2;
+              padding: 0px 0px 0px 3px;
+          }
+
+          .propic{
+            padding: 6px 8px 6px 5px !important;
+
+          }
+
+          .main {
+            /* margin-left: 350px; Same as the width of the sidenav */
+            font-size: 28px; /* Increased text to enable scrolling */
+            padding: 0px 10px;
+          }
+          .profile-pic{
+              
+          }
+          .icon{
+              color: #bbb;
+              margin: 10px 0;
+          }
+          .sidenav a:hover> .icon{
+              color: #000;
+          }
+          .fixed-top{
+              width: inherit;
+          }
+          .feedly-img{
+              width: 30px;
+              height: 30px;
+              margin:  10px 0 10px 0;
+          }
+          .feedly-link{
+              padding: 0 5px 0 10px !important;
+          }
+  
+  
+                  
+          .menu-drop {
+              height: 100%;
+              width: 0;
+              position: fixed;
+              z-index: 1;
+              top: 0;
+              left: 50px;
+              background-color: #eee;
+              overflow-x: hidden;
+              transition: 0.3s;
+              padding-top: 50px;
+          }
+  
+          .menu-drop .link {
+              padding: 2px 8px 2px 32px;
+              text-decoration: none;
+              font-size: 15px;
+              color: #000;
+              display: block;
+              transition: 0.3s;
+          }
+          .menu-drop .item {
+              padding: 2px 8px 2px 32px;
+              text-decoration: none;
+              font-size: 15px;
+              color: #333;
+              display: block;
+              transition: 0.3s;
+          }
+          .svg{
+            margin: 0 10px;
+            padding: 5px;
+            
+        }
+  
+          .menu-drop a:hover {
+              color: #818181;
+              background-color: #ddd ;
+          }
+  
+          .menu-drop .closebtn {
+              position: absolute;
+              top: 0;
+              right: 25px;
+              font-size: 36px;
+              margin-left: 50px;
+          }
+          #main {
+              transition: margin-left 0.3s;
+          }
+          .main-top{
+              height: 50px;
+              padding: 0 !important;
+          }
+          .main-top a{
+              font-size: 20px;
+          }
+          .bottom-content , .top-content{
+            margin-left: 200px;
+          }
+
+
+
+
+          /* ---------------------------*/
+          .menu-item{
+            padding: 10px 25px !important;
+            list-style: none !important;
+            text-decoration: none !important;
+            color: black !important;
+          }
+
+          .menu-item:hover{
+            background-color: #ddd !important;
+          }
+          .menu-item:active{
+            border-left: 1px solid green !important;
+          }
+          .menu-item svg{
+            margin: 5px 10px 5px 0;
+          }
+          .menu-item p{
+            margin: 0;
+          }
+          .titer{
+            padding: 10px 15px ;
+            font-size: 14px;
+          }
+          /* .item-color{
+              background-color: #eee !important;
+              color: black !important;
+              padding: 10px 20px 10px 20px;
+          }
+          .item-color{
+              background-color: #ddd !important;
+              color: black !important;
+          } */
+          /* #itemcolor{
+              background-color: #eee !important;
+              color: black !important;
+          }
+          #itemcolor{
+              background-color: #ddd !important;
+              color: black !important;
+          } */
